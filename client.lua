@@ -5,15 +5,15 @@
 
 --   podesavanja   --
 
-local duffle = true -- do not use wip not working -- change if you dont want weapons out of a duffle-bag
+local duffle = true -- ne koristite brisač koji ne radi-promenite ako ne želite oružje iz torbe
 
-local tafbw = true -- Text Above For Big Weapons - change if you dont want text above for the weapons you take out of the car 
-local tafsw = true -- Text Above For Small Weapons -||-
-local tafmw = true -- Text Above For Melee Weapons -||-
-local tafdb = true -- Text Above For Duffle-Bag -||-
+local tafbw = true -- Tekst iznad za veliko vatreno oružje u sukobu
+local tafsw = true -- Tekst iznad za malo vatreno oružje u sukobu -||-
+local tafmw = true -- Tekst iznad za hladno oružje u sukobu -||-
+local tafdb = true -- Tekst iznad za Duffle-Bag -||-
 
-local txt = "A person" -- /me text
-local bwtxt = "* The person takes the rifle out of the trunk. *"
+local txt = "Osoba" -- /me text
+local bwtxt = "* Osoba vadi oruzije iz gepeka. *"
 local dbtxt = "* Osoba uzima pusku iz torbe. *"
 local dbtxterr = "ANTIGFA - Ovo oruzije moze da se izvadi samo iz torbe/gepeka."
 local bwtxterr = "ANTIGFA- Ovo oruzije moze da se izvadi samo iz auta."
@@ -22,14 +22,14 @@ local mwtxt = "* Osoba vadi oruzije blizu. *"
 
 
 
--- 3dtext settings --
+-- 3dtext podesavanja --
 
-local color = { r = 250, g = 140, b = 0, alpha = 255 } -- color of the text 
-local font = 0 -- font of the text
-local time = 4 -- duration of the display of the text in seconds
+local color = { r = 250, g = 140, b = 0, alpha = 255 } -- boja texta
+local font = 0 -- font texta
+local time = 4 -- trajanji texta koj se pokaze
 local background = {
-    enable = false, -- background toggle
-    color = { r = 35, g = 35, b = 35, alpha = 200 }, -- background color
+    enable = false, -- pozadina ukljucena/iskljucena
+    color = { r = 35, g = 35, b = 35, alpha = 200 }, -- pozadina boja
 }
 local chatMessage = false 
 local dropShadow = false
